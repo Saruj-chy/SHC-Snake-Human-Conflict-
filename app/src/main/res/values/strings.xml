@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">SHC(Snake Human Conflict)</string>
+    <string name="app_name_inside">Snake Human Conflict</string>
+    <string name="yes_rb"> হ্যাঁ </string>
+    <string name="no_rb"> না </string>
+    <string name="live_rb"> বেঁচে আছে  </string>
+    <string name="rescued_rb"> উদ্ধার করে ছেড়ে দেওয়া হয়েছে </string>
+    <string name="dead_rb">মারা গেছে </string>
+
+    <string name="agree_name_ban">রাজী আছি</string>
+    <string name="disagree_name_ban">রাজী না</string>
+
+    <string name="agree_name_eng">Agree</string>
+    <string name="disagree_name_eng"> Disagree </string>
+
+
+    <string name="main_snake_text">"\"সাপের কামড়ে ওঝা নয়, \n হাসপাতালেই চিকিৎসা হয়\""</string>
+
+    <string name="question_01_ban">সাপটি কি কাউকে কামড় দিয়েছে ?</string>
+    <string name="question_02_ban">সাপটি কি মারা গেছে না ছেড়ে দেওয়া হয়েছে ?</string>
+    <string name="q_phone_ban">আপনার মোবাইল নাম্বারটি দিন...(আবশ্যক নয়)</string>
+    <string name="q_location_ban"> সাপটি দেখার গ্রাম/ইউনিয়ন/ওয়ার্ড এর নাম? </string>
+    <string name="q_date_ban"> সাপটি দেখা যাওয়ার তারিখ? </string>
+    <string name="q_think_ban"> সাপটি কি ধরনের বলে আপনি মনে করেন? </string>
+
+    <string name="question_01_eng">Did the Snake bite anyone ?</string>
+    <string name="question_02_eng">Is the snake dead or alive ? </string>
+    <string name="q_phone_eng">Please give us your phone number...(Optional) </string>
+    <string name="q_location_eng">Name of the village/union/ward where the snake was seen? </string>
+    <string name="q_date_eng"> When did you see the snake (Date) ? </string>
+    <string name="q_think_eng"> What kind of snake do you think? </string>
+
+    <string name="submit_eng">Submit</string>
+    <string name="submit_ban">জমা দিন</string>
+
+
+    <string name="net_error_eng">          No internet \n please Refresh the page</string>
+
+
+    <string name="rules_ban">কিছু নিয়মাবলী</string>
+    <string name="shc_rules_ban"> <b>SHC(Snake Human Conflict) অ্যাপ সম্পর্কিত কিছু তথ্যঃ</b> \n
+        মানুষের মাঝে  সাপ ভীতি  কাজ করে এর বাহ্যিক গঠন এবং চলাচলের প্রকৃতির জন্য। এ কারনেই সাপ দেখা মাত্রই মানুষ সাপকে মেরে ফেলতে উদ্ধত হয়। সেইসাথে প্রতিবছর বাংলাদেশে প্রায় ১০০০০০ (এক লক্ষ) লোক সাপের কামড়ের শিকার হয়। যার মধ্যে প্রায় ৬০০০ (ছয় হাজার)  মানুষ মৃত্যুবরণ করে।
+মানুষের মাঝে সাপ  সম্পর্কিত সঠিক তথ্যের আদান-প্রদান এর মাধ্যমে মানুষ ও সাপকে রক্ষা করা, সাপ ভীতি দূর করা, এর পাশাপাশি  সাধারণ মানুষের মাঝে সাপের পরিচিতি তুলে ধরাই এ অ্যাপটির মূল উদ্দেশ্য।\n
+নিদর্শনাবলীঃ\n
+        ১. আপনার মোবাইল ফোনের লোকেশন অন করতে হবে;\n
+        ২. সাপের ছবি ও স্থান এর নাম বিস্তারিত ভাবে দিতে হবে;\n
+        ৩. জীবিত সাপের ছবি তোলার সময় নিরাপদ দূরত্বে অবস্থান করতে হবে ;\n
+        ৪. এ অ্যাপটির মাধ্যমে  আপনার মোবাইলের  ব্যক্তিগত কোন তথ্য সংগ্রহ করা হবে না;\n
+        ৫. আপনার দেয়া তথ্য  শুধুমাত্র গবেষণার কাজে ব্যবহার করা হবে।  কোনো প্রকার বানিজ্যিক উদ্দেশ্যে ব্যবহার বা তৃতীয় কোন  পক্ষের কাছে হস্তান্তর করা হবে না;\n
+        ৬. আপনার সরবরাহকৃত মোবাইল নম্বরটি পরবর্তীতে প্রয়োজনীয় যোগাযোগের জন্য ব্যবহার করা হতে পারে;\n\n
+        উপরোক্ত নিদর্শনাবলীতে যদি আপনি রাজি থাকেন তাহলে  "রাজি আছি " বাটনে ক্লিক করুন।\n\n
+
+        <b>পরিবর্তন, পরিমার্জন ও পরামর্শের জন্য যোগাযোগ করুনঃ</b>\n
+        <b><i>shcbangladeh@gmail.com</i></b>\n\n\n
+</string>
+
+    <string name="rules_eng">Some Rules </string>
+    <string name="shc_rules_eng"><b>Some information about SHC (Snake Human Conflict) app:</b> \n
+        Fear of snakes found among humans for its external structure and nature of its movement. This is why people are arrogant to kill snakes as soon as they see them.
+        In addition, every year about 100,000 (One Lakh) people are bitten by snakes in Bangladesh. Among them, about 6000 (Six Thousand) people die.
+        The main purpose of this app is to keep people and snakes away from exchanging accurate information about snakes.\n
+        Instructions: \n
+
+        1. You have to turn on the location of your mobile phone; \n
+
+        2. Snake pictures and place names should be given in details; \n
+
+        3. You must have to maintain a safe distance while taking pictures of a live snake;  \n
+
+        4. This app will not collect any personal information from your mobile phone;   \n
+
+        5. The information you provided will only be used for research purposes. Shall not be used for any commercial purpose or transferred to any third party;  \n
+
+        6. The mobile number you provided may be used for communication purpose; \n \n
+
+        If you agree with the above instructions, click the "Agree" button.  \n
+
+        <b>For any changes, refinements and suggestions please contact: </b>  \n
+
+        <!--        <b>Contact us for changes, refinements and suggestions: </b>\n-->
+        <b><i>shcbangladeh@gmail.com</i></b>\n\n\n
+</string>
+
+
+    <string name="about_us">
+            <b>App name:</b> Snake Human Conflict \n\n
+            <b>Copyright to: </b> \n
+            Mohammad Abdul Wahed Chowdhury \n
+            Assistant Professor\n
+            Department of Zoology, \n
+            University of Chittagong, Bangladesh\n
+            Cell: +8801717-148149\n
+            Email : wahed.chowdhury@cu.ac.bd \n\n
+
+            <b>For info regarding this app:</b> \n
+            Mohammed Noman  \n
+            Research Assistant   \n
+            Venom Research Centre, \n
+            Chittagong Medical College, Bangladesh \n
+            Cell: +8801912-101978 \n
+            Email: mdnoman2002@gmail.com \n\n
+
+        <b>Developed by:</b> \n
+            Sarose Datta  \n
+            Email: saruj.chy222@gmail.com \n\n
+    </string>
+    <string name="rescue_help">
+         <b>For snake rescue help: </b>\n
+               \t1. Borhan, 01740843980, Rajshahi  \n
+               \t2. Himu, Bogura (01775548287) \n
+               \t3. Md. Sahidul, Boda,Panchagarh (01722938276) \n
+               \t4. Md.Shajahan, Lalmonirhat,Rangpur (01780912825) \n
+               \t5. Ronju, 01774962538, Rajbari \n
+               \t6. Ithar, 01752721957, Chapainawabganj \n
+                \t7. Forid, 01790044987, Natore \n
+               \t8. Sujayet Ali, 01717648960, Habiganj \n
+               \t9. Adnan, 01717929359, Cox\'s Bazar  \n
+               \t10. Rabbi,  01841597003, Shitakunda \n
+               \t11. Russel, 01881502841, Khagrachhari  \n
+               \t12. Mizan, 01712994394, Comilla \n
+               \t13. Haidar, 01988330891, Bandarban  \n
+               \t14. Mithun, 01835915656, Feni  \n
+               \t15. Auawal, 01914827596, Rangamati  \n
+               \t16. Rofiq, 01856838227, Chittagong  \n
+               \t17. Asir, 01857850133, Kishoreganj  \n
+               \t18. Noman, 01912101978, Noakhali \n
+        <!--               \t6. Ithar, 01752721957, Chapainawabganj \n-->
+
+    </string>
+    <string name="language_popup">
+        <b>আপনি কোন ভাষায় অ্যাপটি দেখতে চান?( In which language you would like to use this app? )</b>
+    </string>
+
+    <string name="about_us_menu">About Us</string>
+    <string name="snake_rescue_menu">For Snake Rescue</string>
+    <string name="language_menu">Language</string>
+    <string name="share_menu">Share</string>
+    <string name="rate_us_menu">Rate Us</string>
+    <string name="search_menu">Search</string>
+    <string name="todo">TODO</string>
+    <string name="search_your_name">Search your name</string>
+    <string name="sample">sample</string>
+    <string name="volunteer_address">volunteer address</string>
+
+    <string-array name="sex_array">
+        <item>male</item>
+        <item>female</item>
+        <item>others</item>
+    </string-array>
+</resources>

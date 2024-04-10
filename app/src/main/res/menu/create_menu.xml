@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/about_us_menu"
+        android:id="@+id/user_about"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/snake_rescue_menu"
+        android:id="@+id/user_rescue"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/language_menu"
+        android:id="@+id/user_language"
+        app:showAsAction="always"/>
+    <item
+        android:title="@string/share_menu"
+        android:id="@+id/user_share"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/rate_us_menu"
+        android:id="@+id/user_rate"
+        app:showAsAction="never"/>
+
+
+</menu>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_green"
+    tools:context=".activity.CameraViewActivity">
+
+    <include
+        android:id="@+id/camera_toolbar"
+        layout="@layout/app_bar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_constraint_00"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_question_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:elevation="@dimen/dimen_5"
+                app:cardCornerRadius="@dimen/dimen_5"
+                app:cardUseCompatPadding="true"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+                <ImageView
+                    android:id="@+id/mSnakeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_300"
+                    android:src="@mipmap/image_icon"
+                    android:scaleType="fitXY"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="@string/todo" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#68050505"
+                    android:gravity="center"
+
+                    >
+                    <TextView
+                        android:id="@+id/text_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Click to image"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/dimen_25"
+                        android:padding="@dimen/dimen_10"
+                        android:background="@drawable/stroke_bg"
+                        tools:ignore="HardcodedText,SpUsage" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_question_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:elevation="@dimen/dimen_5"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_question_00">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_constraint_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_marginTop="@dimen/dimen_3">
+                    <TextView
+                        android:id="@+id/text_question_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_3"
+                        android:text="@string/question_01_ban"
+                        android:textColor="@color/bright_green"
+                        android:textSize="@dimen/dimen_16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/layout_constraint_01"
+                        tools:ignore="SpUsage" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_question_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="@dimen/dimen_30"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_question_01">
+
+                        <RadioButton
+                            android:id="@+id/radio_btn_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/yes_rb"
+                            android:onClick="onRadioButtonClicked"
+                            android:textColor="@color/colorPrimaryDark"
+                            tools:ignore="OnClick,RtlSymmetry,UsingOnClickInXml"
+                            android:paddingStart="@dimen/dimen_16" />
+
+                        <RadioButton
+                            android:id="@+id/radio_btn_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/no_rb"
+                            tools:ignore="OnClick,RtlSymmetry"
+                            android:paddingStart="@dimen/dimen_16" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_question_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:elevation="@dimen/dimen_3"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_question_01">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_constraint_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_marginTop="@dimen/dimen_3">
+
+                    <TextView
+                        android:id="@+id/text_question_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_3"
+                        android:text="@string/question_02_ban"
+                        android:textColor="@color/bright_green"
+                        android:textSize="@dimen/dimen_16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/layout_constraint_02"
+                        tools:ignore="SpUsage" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_question_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="@dimen/dimen_30"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_question_02">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/radio_btn_03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="@string/dead_rb"
+                                tools:ignore="OnClick,RtlSymmetry" />
+
+                            <RadioButton
+                                android:id="@+id/radio_btn_04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="@string/live_rb"
+                                tools:ignore="OnClick" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/radio_btn_05"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="@dimen/dimen_16"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="@string/rescued_rb"
+                                tools:ignore="OnClick" />
+                        </LinearLayout>
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_thanazilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_question_02"
+
+                tools:ignore="MissingConstraints"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/solid_bg"
+
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_zilla_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/bright_green"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+
+                        app:drawableRightCompat="@drawable/ic_arrow_forward" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/solid_bg"
+
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/text_sub_district_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/bright_green"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/dimen_16"
+                        app:drawableRightCompat="@drawable/ic_arrow_forward"
+                        tools:ignore="SpUsage" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_question_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:elevation="@dimen/dimen_3"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_layout_thanazilla">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_location_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:layout_marginBottom="@dimen/dimen_5">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_input_location_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/q_location_eng"
+                        android:textSize="@dimen/dimen_14"
+                        android:padding="@dimen/dimen_5"
+                        android:textColorHint="@android:color/black"
+                        tools:ignore="SpUsage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_question_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:elevation="@dimen/dimen_3"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_question_03">
+                <LinearLayout
+                    android:id="@+id/linear_date_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onLinearDateFrom"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="4dp">
+
+                    <TextView
+                        android:id="@+id/text_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingRight="@dimen/dimen_5"
+                        android:paddingLeft="@dimen/dimen_5"
+                        android:paddingTop="@dimen/dimen_8"
+                        android:paddingBottom="@dimen/dimen_8"
+
+                        android:gravity="center"
+                        android:textColor="@color/bright_green"
+                        android:text="@string/q_date_ban"
+                        android:textSize="@dimen/dimen_14"
+                        tools:ignore="SpUsage" />
+
+                    <ImageButton
+                        android:id="@+id/imagebtn_date_from"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_date"
+                        android:contentDescription="@string/todo" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_question_think_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dimen_3"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_question_04">
+
+                <TextView
+                    android:id="@+id/text_snake_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q_think_ban"
+                    android:textSize="@dimen/dimen_14"
+                    android:gravity="center"
+                    android:onClick="onLoadAllSnakeName"
+
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:textColor="@color/bright_green"
+                    app:drawableRightCompat="@drawable/ic_arrow_forward"
+                    tools:ignore="SpUsage" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_question_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dimen_3"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_question_think_05">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/HintText"
+
+                    app:counterEnabled="true"
+                    app:counterMaxLength="11"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_marginTop="@dimen/dimen_3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_input_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:textSize="@dimen/dimen_14"
+                        android:textColorHint="@android:color/black"
+                        tools:ignore="SpUsage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_38"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_20"
+                android:background="@drawable/button_background"
+                android:text="@string/submit_eng"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/dimen_18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_question_05"
+
+                android:layout_marginEnd="@dimen/dimen_10"
+                tools:ignore="SpUsage" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

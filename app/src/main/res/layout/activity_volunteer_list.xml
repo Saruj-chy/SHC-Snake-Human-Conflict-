@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_green"
+    tools:context=".activity.VolunteerListActivity">
+
+    <include
+        android:id="@+id/volunteer_list_toolbar"
+        layout="@layout/app_bar_layout"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/volunteer_list_toolbar"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_contactlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/holo_green"
+
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginHorizontal="@dimen/dimen_10"
+                android:elevation="@dimen/dimen_5"
+                app:cardElevation="@dimen/dimen_5"
+                app:cardCornerRadius="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/linear_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+
+
+
+                    android:layout_marginBottom="@dimen/dimen_5"
+                    android:layout_below="@+id/volunteer_list_toolbar"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/search_contact_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/holo_green"
+                        android:textColor="@color/bright_green"
+                        android:layout_marginHorizontal="@dimen/dimen_5"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:padding="@dimen/dimen_10"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        tools:ignore="LabelFor,TextFields" />
+                    <ImageButton
+                        android:id="@+id/imgbtn_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_cancel_24"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center"
+
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/todo" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/progress_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_centerInParent="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:text="@string/net_error_eng"
+                    android:textSize="@dimen/dimen_20"
+                    android:textColor="@color/white"
+                    android:paddingVertical="@dimen/dimen_30"
+                    android:paddingHorizontal="@dimen/dimen_30"
+                    android:background="@drawable/solid_bg_contact"
+
+
+                    android:layout_centerInParent="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpUsage" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_contact_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cardview_contactlist"
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

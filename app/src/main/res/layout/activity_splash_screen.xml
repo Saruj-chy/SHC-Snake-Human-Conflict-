@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".SplashScreenActivity">
+
+
+    <ImageView
+        android:id="@+id/image_snake"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/image_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/text_main_snake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_snake_text"
+        android:textSize="@dimen/dimen_18"
+        android:padding="@dimen/dimen_5"
+        android:textStyle="bold"
+        android:textColor="@color/bright_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dimen_20"
+        tools:ignore="SpUsage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

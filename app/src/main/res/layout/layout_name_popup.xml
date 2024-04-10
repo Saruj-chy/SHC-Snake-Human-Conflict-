@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_400">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_400"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_search_name_popup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:hint="@string/search_your_name"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_search_name_popup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ListView
+            android:id="@+id/listview_popup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_below="@+id/text_search_name_popup"
+            android:background="@drawable/border_input"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:padding="@dimen/dimen_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_popup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_below="@+id/text_search_name_popup"
+            android:background="@drawable/border_input"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:padding="@dimen/dimen_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/image_full_popup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:src="@mipmap/image_icon"
+            android:scaleType="fitXY"
+            android:layout_marginHorizontal="@dimen/dimen_5"
+            android:paddingHorizontal="@dimen/dimen_2"
+            android:paddingBottom="@dimen/dimen_2"
+            android:paddingTop="@dimen/dimen_2"
+            android:layout_marginVertical="@dimen/dimen_3"
+            android:background="@drawable/stoke_border_both"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/todo" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
